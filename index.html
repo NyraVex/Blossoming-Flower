@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blossoming Flower</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div id="cursor"></div>
+
+  <canvas id="sparkle-canvas"></canvas>
+
+
+  <body class="not-loaded">
+    <div class="night"></div>
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__petals flower__petals--1">
+          <div class="flower__petal flower__petal--1"></div>
+          <div class="flower__petal flower__petal--2"></div>
+          <div class="flower__petal flower__petal--3"></div>
+          <div class="flower__petal flower__petal--4"></div>
+          <div class="flower__center"></div>
+
+          <div class="flower__spark flower__spark--1"></div>
+          <div class="flower__spark flower__spark--2"></div>
+          <div class="flower__spark flower__spark--3"></div>
+          <div class="flower__spark flower__spark--4"></div>
+          <div class="flower__spark flower__spark--5"></div>
+          <div class="flower__spark flower__spark--6"></div>
+          <div class="flower__spark flower__spark--7"></div>
+          <div class="flower__spark flower__spark--8"></div>
+
+        </div>
+        <div class="flower__stem">
+          <div class="flower__stem-leaf flower__stem-leaf--1"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--2"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--3"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--4"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--5"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--6"></div>
+        </div>
+      </div>
+
+      <div class="flower flower--2">
+        <div class="flower__petals flower__petals--2">
+          <div class="flower__petal flower__petal--1"></div>
+          <div class="flower__petal flower__petal--2"></div>
+          <div class="flower__petal flower__petal--3"></div>
+          <div class="flower__petal flower__petal--4"></div>
+          <div class="flower__center"></div>
+
+          <div class="flower__spark flower__spark--1"></div>
+          <div class="flower__spark flower__spark--2"></div>
+          <div class="flower__spark flower__spark--3"></div>
+          <div class="flower__spark flower__spark--4"></div>
+          <div class="flower__spark flower__spark--5"></div>
+          <div class="flower__spark flower__spark--6"></div>
+          <div class="flower__spark flower__spark--7"></div>
+          <div class="flower__spark flower__spark--8"></div>
+
+        </div>
+        <div class="flower__stem">
+          <div class="flower__stem-leaf flower__stem-leaf--1"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--2"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--3"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--4"></div>
+        </div>
+      </div>
+
+      <div class="flower flower--3">
+        <div class="flower__petals flower__petals--3">
+          <div class="flower__petal flower__petal--1"></div>
+          <div class="flower__petal flower__petal--2"></div>
+          <div class="flower__petal flower__petal--3"></div>
+          <div class="flower__petal flower__petal--4"></div>
+          <div class="flower__center"></div>
+
+          <div class="flower__spark flower__spark--1"></div>
+          <div class="flower__spark flower__spark--2"></div>
+          <div class="flower__spark flower__spark--3"></div>
+          <div class="flower__spark flower__spark--4"></div>
+          <div class="flower__spark flower__spark--5"></div>
+          <div class="flower__spark flower__spark--6"></div>
+          <div class="flower__spark flower__spark--7"></div>
+          <div class="flower__spark flower__spark--8"></div>
+
+        </div>
+        <div class="flower__stem">
+          <div class="flower__stem-leaf flower__stem-leaf--1"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--2"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--3"></div>
+          <div class="flower__stem-leaf flower__stem-leaf--4"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d:1.2s">
+        <div class="vine">
+          <div class="vine__top"></div>
+          <div class="vine__bottom"></div>
+        </div>
+      </div>
+
+      <div class="growing-grass">
+        <div class="grass grass--1">
+          <div class="grass__top"></div>
+          <div class="grass__bottom"></div>
+          <div class="grass__leaf grass__leaf--1"></div>
+          <div class="grass__leaf grass__leaf--2"></div>
+          <div class="grass__leaf grass__leaf--3"></div>
+          <div class="grass__leaf grass__leaf--4"></div>
+          <div class="grass__leaf grass__leaf--5"></div>
+          <div class="grass__leaf grass__leaf--6"></div>
+          <div class="grass__leaf grass__leaf--7"></div>
+          <div class="grass__leaf grass__leaf--8"></div>
+          <div class="grass__overlay"></div>
+        </div>
+      </div>
+
+      <div class="growing-grass">
+        <div class="grass grass--2">
+          <div class="grass__top"></div>
+          <div class="grass__bottom"></div>
+          <div class="grass__leaf grass__leaf--1"></div>
+          <div class="grass__leaf grass__leaf--2"></div>
+          <div class="grass__leaf grass__leaf--3"></div>
+          <div class="grass__leaf grass__leaf--4"></div>
+          <div class="grass__leaf grass__leaf--5"></div>
+          <div class="grass__leaf grass__leaf--6"></div>
+          <div class="grass__leaf grass__leaf--7"></div>
+          <div class="grass__leaf grass__leaf--8"></div>
+          <div class="grass__overlay"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d:2.4s">
+        <div class="branch branch--1">
+          <div class="branch__leaf"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d:2.8s">
+        <div class="branch branch--2">
+          <div class="branch__leaf"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d:2.8s">
+        <div class="frond">
+          <div class="frond__wrapper frond__wrapper--1">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--2">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--3">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--4">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--5">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--6">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--7">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__wrapper frond__wrapper--8">
+            <div class="frond__leaf"></div>
+          </div>
+          <div class="frond__line"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d:3.2s">
+        <div class="sprig">
+          <div class="sprig__base"></div>
+          <div class="sprig__leaf sprig__leaf--1"></div>
+          <div class="sprig__leaf sprig__leaf--2"></div>
+          <div class="sprig__leaf sprig__leaf--3"></div>
+          <div class="sprig__leaf sprig__leaf--4"></div>
+          <div class="sprig__leaf sprig__leaf--5"></div>
+          <div class="sprig__leaf sprig__leaf--6"></div>
+          <div class="sprig__leaf sprig__leaf--7"></div>
+          <div class="sprig__leaf sprig__leaf--8"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--0">
+        <div class="grow-ans" style="--d:3s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:2.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.4s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--1">
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.8s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--2">
+        <div class="grow-ans" style="--d:4s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.4s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--3">
+        <div class="grow-ans" style="--d:4s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--4">
+        <div class="grow-ans" style="--d:4s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--5">
+        <div class="grow-ans" style="--d:4s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--6">
+        <div class="grow-ans" style="--d:4.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.4s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:4.8s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="tallgrass tallgrass--7">
+        <div class="grow-ans" style="--d:3s">
+          <div class="tallgrass__leaf tallgrass__leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.2s">
+          <div class="tallgrass__leaf tallgrass__leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.5s">
+          <div class="tallgrass__leaf tallgrass__leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d:3.6s">
+          <div class="tallgrass__leaf tallgrass__leaf--3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
